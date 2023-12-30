@@ -10,7 +10,7 @@ namespace KingdomeComeDeliverance.Services
             AppShell.Instance.Navigated += Instance_Navigated;
         }
 
-        public event EventHandler NavigationChanged;
+        public event EventHandler<ShellNavigatedEventArgs> NavigationChanged;
 
         private void Instance_Navigated(object? sender, ShellNavigatedEventArgs e)
         {
@@ -28,6 +28,9 @@ namespace KingdomeComeDeliverance.Services
             Routing.RegisterRoute(Constants.SideQuestsPageRoute, typeof(SideQuestsPage));
             Routing.RegisterRoute(Constants.SkillsPageRoute, typeof(SkillsPage));
             Routing.RegisterRoute(Constants.WeaponsPageRoute, typeof(WeaponsPage));
+            Routing.RegisterRoute(Constants.TrophysPageRoute, typeof(TrophysPage));
+            Routing.RegisterRoute(Constants.MapsPageRoute, typeof(MapsPage));
+            Routing.RegisterRoute(Constants.AlchemiePageRoute, typeof(AlchemiePage));
         }
         public async Task GoBack()
         {

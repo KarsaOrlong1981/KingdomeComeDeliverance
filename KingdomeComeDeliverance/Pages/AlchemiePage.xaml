@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="KingdomeComeDeliverance.Pages.ActivitysPage"
              xmlns:vm="clr-namespace:KingdomeComeDeliverance.ViewModels"
              xmlns:controls="clr-namespace:KingdomeComeDeliverance.Controls"
-             x:DataType="vm:ActivitysPageViewModel"
-             BindingContext="{Binding Source={StaticResource Locator}, Path=Activitys}"
-             Title="ActivitysPage">
-
+             x:Class="KingdomeComeDeliverance.Pages.AlchemiePage"
+             x:DataType="vm:AlchemieViewModel"
+             BindingContext="{Binding Source={StaticResource Locator}, Path=Alchemie}"
+             Title="AlchemiePage">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <controls:NavigationBar />
-        <Image Grid.Row="1" Source="{Binding Source={StaticResource KCD_7_BackgroundImagePath}}" Opacity="0.6"  Aspect="AspectFill" />
+        <Image Grid.Row="1" Source="{Binding Source={StaticResource AlchemieImage}}" Opacity="0.6" Aspect="AspectFill"  Margin="0,0,0,0"/>
     </Grid>
 </ContentPage>

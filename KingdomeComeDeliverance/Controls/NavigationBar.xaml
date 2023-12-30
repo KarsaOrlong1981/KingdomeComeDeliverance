@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:KingdomeComeDeliverance.Controls"
+             xmlns:vm="clr-namespace:KingdomeComeDeliverance.ViewModels"
+             BindingContext="{Binding Source={StaticResource Locator}, Path=Nav}"
+             x:DataType="vm:NavigationBarViewModel"
+             x:Class="KingdomeComeDeliverance.Controls.NavigationBar">
+    <Grid 
+        ColumnDefinitions="*,*,*"
+        HorizontalOptions="Fill"
+        HeightRequest="58" 
+        BackgroundColor="{StaticResource MainAccentColor}"
+        >
+        <controls:ImageButtonPressed 
+            IsVisible="{Binding CanGoBack}"
+            ImageSource="navarrow.png"
+            HorizontalOptions="Start" 
+            Command="{Binding GoBackCommand}"
+            Margin="4,0,0,0" 
+            HeightRequest="50" 
+            WidthRequest="50"/>
+        <HorizontalStackLayout 
+            Grid.Column="1" 
+            Spacing="0" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center">
+            <Label Text="{Binding FirstChar}" 
+                   FontSize="35" 
+                   TextColor="Red" 
+                   Margin="0,0,0,0" 
+                   Style="{StaticResource NavBarLabelStyle}" />
+            <Label 
+                Text="{Binding Title}"
+                Margin="0,4,0,0"
+                Style="{StaticResource NavBarLabelStyle}"/>    
+        </HorizontalStackLayout>
+       
+    </Grid>
+</ContentView>

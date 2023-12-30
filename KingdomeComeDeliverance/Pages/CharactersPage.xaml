@@ -3,13 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KingdomeComeDeliverance.Pages.CharactersPage"
              xmlns:vm="clr-namespace:KingdomeComeDeliverance.ViewModels"
+             xmlns:controls="clr-namespace:KingdomeComeDeliverance.Controls"
              x:DataType="vm:CharactersPageViewModel"
              BindingContext="{Binding Source={StaticResource Locator}, Path=Characters}"
              Title="CharactersPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <controls:NavigationBar />
+        <Image Grid.Row="1" Source="{Binding Source={StaticResource CharactersImage}}" Opacity="0.6" Margin="0,0,-350,0" Aspect="AspectFill" />
+    </Grid>
 </ContentPage>

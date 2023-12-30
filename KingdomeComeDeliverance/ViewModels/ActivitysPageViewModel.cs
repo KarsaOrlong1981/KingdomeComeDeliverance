@@ -15,9 +15,9 @@ namespace KingdomeComeDeliverance.ViewModels
             shellNavigationService.NavigationChanged += ShellNavigationService_NavigationChanged;
         }
 
-        private void ShellNavigationService_NavigationChanged(object? sender, EventArgs e)
+        private void ShellNavigationService_NavigationChanged(object? sender, ShellNavigatedEventArgs e)
         {
-            
+            var test = e.Current.Location.OriginalString;
         }
     }   
 }

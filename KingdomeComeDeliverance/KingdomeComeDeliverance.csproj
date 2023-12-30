@@ -36,11 +36,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
-
+		<MauiIcon Include="Resources\AppIcon\appicon.png" Color="#a28834" />
+		
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
-
+		<MauiSplashScreen Include="Resources\Splash\icon.png" Color="#a28834" BaseSize="128,128" />
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
@@ -53,6 +52,29 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\AppIcon\appicon.png" />
+	  <None Remove="Resources\Fonts\CloisterBlack.ttf" />
+	  <None Remove="Resources\Images\alchemie.jpg" />
+	  <None Remove="Resources\Images\armor.jpg" />
+	  <None Remove="Resources\Images\characters.jpg" />
+	  <None Remove="Resources\Images\clothes.jpg" />
+	  <None Remove="Resources\Images\flowers.jpg" />
+	  <None Remove="Resources\Images\kcd1bg.jpg" />
+	  <None Remove="Resources\Images\kcd2bg.jpg" />
+	  <None Remove="Resources\Images\kcd3bg.jpg" />
+	  <None Remove="Resources\Images\kcd4bg.jpg" />
+	  <None Remove="Resources\Images\kcd5bg.jpg" />
+	  <None Remove="Resources\Images\kcd6bg.jpg" />
+	  <None Remove="Resources\Images\kcd7bg.jpg" />
+	  <None Remove="Resources\Images\mainquests.jpg" />
+	  <None Remove="Resources\Images\navarrow.png" />
+	  <None Remove="Resources\Images\sidequests.jpg" />
+	  <None Remove="Resources\Images\thief.jpg" />
+	  <None Remove="Resources\Images\trophyking.png" />
+	  <None Remove="Resources\Images\weapons.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
@@ -60,8 +82,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Extensions\" />
-	  <Folder Include="Models\" />
 	  <Folder Include="Views\" />
 	</ItemGroup>
 
@@ -72,7 +92,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Controls\NavigationBar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\ActivitysPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\AlchemiePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\ArmorPage.xaml">
@@ -93,16 +119,34 @@
 	  <MauiXaml Update="Pages\MainQuestsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\MapsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\SideQuestsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\SkillsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\TrophysPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\WeaponsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Resources\Shared\BorderStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Resources\Shared\Converters.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Shared\Fonts.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Shared\Images.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Shared\LabelStyles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Shared\Resources.xaml">

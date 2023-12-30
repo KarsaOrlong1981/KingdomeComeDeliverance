@@ -4,7 +4,7 @@ namespace KingdomeComeDeliverance.Services
 {
     public interface IShellNavigationService
     {
-        event EventHandler NavigationChanged;
+        event EventHandler<ShellNavigatedEventArgs> NavigationChanged;
         Task NavigateTo(string url);
         Task GoBack();      
     }

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KingdomeComeDeliverance.Resources.Shared.Images">
+    <x:String x:Key="KCD_1_BackgroundImagePath">kcd1bg.jpg</x:String>
+    <x:String x:Key="KCD_2_BackgroundImagePath">kcd2bg.jpg</x:String>
+    <x:String x:Key="KCD_3_BackgroundImagePath">kcd3bg.jpg</x:String>
+    <x:String x:Key="KCD_4_BackgroundImagePath">kcd4bg.jpg</x:String>
+    <x:String x:Key="KCD_5_BackgroundImagePath">kcd5bg.jpg</x:String>
+    <x:String x:Key="KCD_6_BackgroundImagePath">kcd6bg.jpg</x:String>
+    <x:String x:Key="KCD_7_BackgroundImagePath">kcd7bg.jpg</x:String>
+    <x:String x:Key="ArmorImage">armor.jpg</x:String>
+    <x:String x:Key="AlchemieImage">alchemie.jpg</x:String>
+    <x:String x:Key="CharactersImage">characters.jpg</x:String>
+    <x:String x:Key="ClothesImage">clothes.jpg</x:String>
+    <x:String x:Key="MainQuestsImage">mainquests.jpg</x:String>
+    <x:String x:Key="SideQuestImage">sidequests.jpg</x:String>
+    <x:String x:Key="SkillsImage">thief.jpg</x:String>
+    <x:String x:Key="WeaponsImage">weapons.jpg</x:String>
+    <x:String x:Key="TrophysImage">trophyking.png</x:String>
+</ResourceDictionary>
