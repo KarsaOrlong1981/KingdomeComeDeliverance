@@ -18,5 +18,9 @@ namespace KingdomeComeDeliverance
         public static readonly string SideQuestsPageRoute = "sideQuestsRoute";
         public static readonly string SkillsPageRoute = "skillsRoute";
         public static readonly string WeaponsPageRoute = "weaponsRoute";
+        public static readonly string AlchemiePageRoute = "alchemieRoute";
+        public static readonly string TrophysPageRoute = "trophysRoute";
+        public static readonly string MapsPageRoute = "mapsRoute";
+        public static readonly string MainAccentHexColor = "#a28834";   
     }
 }

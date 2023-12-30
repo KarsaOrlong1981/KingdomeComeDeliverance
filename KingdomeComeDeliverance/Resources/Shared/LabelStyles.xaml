@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KingdomeComeDeliverance.Resources.Shared.LabelStyles">
+    <Style x:Key="NavBarLabelStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="27" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontFamily" Value="Gothic" />
+        <Setter Property="TextColor" Value="Black" />
+    </Style>
+</ResourceDictionary>

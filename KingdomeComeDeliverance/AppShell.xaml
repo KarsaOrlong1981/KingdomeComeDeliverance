@@ -5,8 +5,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:KingdomeComeDeliverance.Pages"
     Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False"
     Title="KingdomeComeDeliverance">
-
+    
     <ShellContent
         Title="Main Menue"
         ContentTemplate="{DataTemplate pages:MainMenuePage}"

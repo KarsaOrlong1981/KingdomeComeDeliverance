@@ -4,6 +4,10 @@
              x:Class="KingdomeComeDeliverance.Resources.Shared.Resources">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Converters.xaml" />
+        <ResourceDictionary Source="Images.xaml" />
+        <ResourceDictionary Source="BorderStyles.xaml" />
+        <ResourceDictionary Source="Fonts.xaml" />
+        <ResourceDictionary Source="LabelStyles.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>
