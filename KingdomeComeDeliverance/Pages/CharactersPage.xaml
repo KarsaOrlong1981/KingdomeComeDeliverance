@@ -2,6 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KingdomeComeDeliverance.Pages.CharactersPage"
+             xmlns:vm="clr-namespace:KingdomeComeDeliverance.ViewModels"
+             x:DataType="vm:CharactersPageViewModel"
+             BindingContext="{Binding Source={StaticResource Locator}, Path=Characters}"
              Title="CharactersPage">
     <VerticalStackLayout>
         <Label 
